@@ -13,9 +13,9 @@ public class JPARemove {
 
         em.getTransaction().begin();
 
-        Country imaginaryCountry = em.find(Country.class, "XYZ");
+        Country country = em.find(Country.class, "XYZ");
 
-        em.remove(imaginaryCountry);
+        em.remove(country);
 
         em.getTransaction().commit();
 
